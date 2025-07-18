@@ -1,0 +1,25 @@
+{
+  "name": "ai-education-assistant",
+  "version": "1.0.0",
+  "description": "AI-Powered Education Assistant for Inclusive & Equitable Learning",
+  "main": "server/index.js",
+  "scripts": {
+    "setup": "node setup.js",
+    "test-gemini": "node test-gemini.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && nodemon index.js",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install",
+    "start": "cd server && node index.js"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "keywords": ["education", "ai", "chatbot", "multilingual", "sdg4", "gemini"],
+  "author": "Education Assistant Team",
+  "license": "MIT"
+} 
